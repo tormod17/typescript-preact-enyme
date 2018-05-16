@@ -9,14 +9,14 @@ var webpack = require('../tasks/webpack');
 
 module.exports = function (config) {
    config.set({
-      basePath: '../',
-      frameworks: ['mocha', 'chai', 'sinon'],
+      basePath: './',
+      frameworks: ['mocha', 'sinon'],
       files: [
-         './tests/**/*.spec.ts*'
+         './**/*.spec.ts*'
       ],
       exclude: [],
       preprocessors: {
-         './tests/**/*.spec.ts*': ['webpack']
+         './**/*.spec.ts*': ['webpack']
       },
       webpack,
       reporters: ['mocha'],

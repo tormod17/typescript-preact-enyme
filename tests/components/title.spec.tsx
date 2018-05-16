@@ -1,6 +1,6 @@
-import { h } from 'preact';
-import { Enzyme } from '../config';
+import * as React from 'react';
 import { expect } from 'chai';
+import { mount } from 'enzyme';
 
 
 /* -----------------------------------
@@ -34,9 +34,9 @@ describe('Components -> <Title />', () => {
 
       it('outputs an <h1> element', () => {
 
-         const value = 1;
+         const item = mount(<Title />);
 
-         expect(value).to.equal(1);
+         expect(item.find('h1').length).to.equal(1);
 
       });
 

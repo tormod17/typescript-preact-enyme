@@ -6,8 +6,16 @@
  *
  * -------------------------------- */
 
-const Enzyme = require('enzyme');
-const { Adapter } = require('enzyme-adapter-preact');
+import { configure } from 'enzyme';
+
+
+/* -----------------------------------
+ *
+ * Adapter
+ *
+ * -------------------------------- */
+
+var Config = require('enzyme-adapter-preact');
 
 
 /* -----------------------------------
@@ -16,13 +24,4 @@ const { Adapter } = require('enzyme-adapter-preact');
  *
  * -------------------------------- */
 
-Enzyme.configure({ adapter: new Adapter() });
-
-
-/* -----------------------------------
- *
- * Export
- *
- * -------------------------------- */
-
-export { Enzyme };
+configure({ adapter: new Config.Adapter() });
