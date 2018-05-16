@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
 
 
 /* -----------------------------------
@@ -7,19 +7,7 @@ import { h, Component } from 'preact';
  *
  * -------------------------------- */
 
-class Title extends Component<{}, {}> {
-
-
-   public render() {
-
-      return (
-         <h1>Hi there</h1>
-      );
-
-   }
-
-
-}
+const Title = () => (<h1 className="title">TEST</h1>);
 
 
 /* -----------------------------------

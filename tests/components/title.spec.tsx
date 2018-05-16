@@ -1,5 +1,5 @@
 import 'mocha';
-import Preact, { h } from 'preact';
+import { h } from 'preact';
 import * as sinon from 'sinon';
 import { Enzyme } from '../config';
 import { expect } from 'chai';
@@ -38,12 +38,11 @@ describe('Components -> <Title />', () => {
 
       });
 
-      it('outputs wrapper with correct className', () => {
+      it('outputs an <h1> element', () => {
 
          const instance = Enzyme.shallow(<Title />);
 
-         // expect(instance).to.have.length(1);
-         expect(instance.hasClass('test')).to.equal(true);
+         expect(instance.type()).to.equal('h1');
 
       });
 
