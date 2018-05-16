@@ -1,0 +1,29 @@
+{
+   "compilerOptions": {
+      "baseUrl": "./src",
+      "outDir": "./dist",
+      "noImplicitAny": false,
+      "noEmitOnError": true,
+      "allowSyntheticDefaultImports": true,
+      "noFallthroughCasesInSwitch": true,
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "inlineSourceMap": false,
+      "inlineSources": false,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "jsx": "react",
+      "jsxFactory": "h",
+      "lib": [
+         "dom",
+         "es5",
+         "es6",
+         "es7"
+      ]
+   },
+   "exclude": [
+      "node_modules"
+   ]
+}

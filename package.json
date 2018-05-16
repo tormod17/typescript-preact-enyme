@@ -1,0 +1,35 @@
+{
+  "name": "typescript-preact-enyme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "preact": "^8.2.9"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.3",
+    "@types/mocha": "^5.2.0",
+    "@types/sinon": "^4.3.3",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-preact": "^0.2.0",
+    "mocha": "^5.1.1",
+    "sinon": "^5.0.7",
+    "ts-mocha": "^1.2.0",
+    "tslib": "^1.9.1",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "test": "ts-mocha -p ./ ./tests/**/*.spec.ts*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhdevuk/typescript-preact-enyme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhdevuk/typescript-preact-enyme/issues"
+  },
+  "homepage": "https://github.com/jhdevuk/typescript-preact-enyme#readme"
+}
